@@ -6,11 +6,11 @@
 /*   By: hnoh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 09:28:57 by hnoh              #+#    #+#             */
-/*   Updated: 2021/01/18 12:23:36 by nogeun           ###   ########.fr       */
+/*   Updated: 2021/01/18 13:04:27 by nogeun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line_bonus.h"
+#include "get_next_line.h"
 
 int					is_newline(char *backup)
 {
