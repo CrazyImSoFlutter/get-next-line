@@ -6,12 +6,17 @@
 /*   By: hnoh <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 09:28:57 by hnoh              #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2021/01/18 10:53:15 by hnoh             ###   ########.fr       */
+=======
+/*   Updated: 2021/01/18 10:41:46 by hnoh             ###   ########.fr       */
+>>>>>>> 772feded2024ef1efa7e4db457dd832bc4145808
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
+<<<<<<< HEAD
 int		is_newline(char *backup)
 {
 	int				i;
@@ -64,6 +69,8 @@ int		return_all(char **backup, char **line, int read_size)
 	return (0);
 }
 
+=======
+>>>>>>> 772feded2024ef1efa7e4db457dd832bc4145808
 int 	get_next_line(int fd, char **line)
 {
 	static char		*backup_buf[OPEN_MAX];
@@ -78,7 +85,11 @@ int 	get_next_line(int fd, char **line)
 		buf[read_size] = '\0';
 		backup_buf[fd] = fd_strjoin(backup[fd], buf);
 		if ((cut = is_newline(backup[fd]) >= 0))
+<<<<<<< HEAD
 			return (split(&backup[fd], line, cut));
+=======
+			return (split_line(&backup[fd], line, cut));
+>>>>>>> 772feded2024ef1efa7e4db457dd832bc4145808
 	}
 	return (return_all(&backup[fd], line, read_size));
 }
